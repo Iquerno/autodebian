@@ -1,0 +1,28 @@
+[global_config]
+  title_transmit_fg_color = "#abb2bf"
+  title_transmit_bg_color = "#282a2e"
+  title_inactive_fg_color = "#abb2bf"
+  title_inactive_bg_color = "#373b41"
+[keybindings]
+[profiles]
+  [[default]]
+    audible_bell = True
+    background_color = "#292d3e"
+    background_darkness = 0.8
+    background_type = transparent
+    cursor_shape = underline
+    cursor_color = "#abb2bf"
+    font = Hack Bold 16
+    foreground_color = "#abb2bf"
+    palette = "#282a2e:#fe5572:#c3e78d:#fecb6b:#82aafe:#c792e9:#60adeb:#abb2bf:#373b41:#ef7178:#c3e78d:#fe5572:#82aafe:#fecb6b:#676e95:#fefdfd"
+    use_system_font = False
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]
