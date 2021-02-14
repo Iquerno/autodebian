@@ -29,7 +29,7 @@ sudo apt install discord -y
 echo "Installing programming software"
 sudo apt install code -y
 echo "Installing browser"
-sudo apt install vivaldi -y
+sudo apt install vivaldi-stable -y
 sudo apt remove firefox -y
 echo "Installing video encoders and codecs"
 sudo apt install handbrake -y
