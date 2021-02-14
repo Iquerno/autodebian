@@ -1,0 +1,3 @@
+# autodebian
+
+# sh installer.sh
