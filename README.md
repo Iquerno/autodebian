@@ -1,3 +1,3 @@
-# autodebian
+# AutoDebian
 
-# sh installer.sh
+sh installer.sh
