@@ -8,9 +8,6 @@ echo "Installing terminal tools"
 sudo apt install zsh -y
 sudo apt install zsh-autosuggestions -y
 sudo apt install terminator -y
-sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-sudo cat "$DIR/zsh_config" > "$HOME/.zshrc"
-sudo cat "$DIR/terminator_config" > "$HOME/.config/terminator/config"
 sudo apt install fonts-powerline -y
 sudo apt install powerline -y
 sudo apt install neofetch -y
@@ -29,7 +26,9 @@ sudo apt install discord -y
 echo "Installing programming software"
 sudo apt install code -y
 echo "Installing browser"
-sudo apt install vivaldi-stable -y
+wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo apt-key add -
+sudo add-apt-repository 'deb https://repo.vivaldi.com/archive/deb/ stable main'
+sudo apt update && sudo apt install vivaldi-stable
 sudo apt remove firefox -y
 echo "Installing video encoders and codecs"
 sudo apt install handbrake -y
@@ -41,6 +40,8 @@ sudo apt install rofi -y
 sudo apt install i3 -y
 sudo apt install kde-full -y
 echo "Applying configuration files"
-
-echo "autodebian/installer.sh FINISHED"
+sudo cat "$DIR/zsh_config" > "$HOME/.zshrc"
+sudo cat "$DIR/terminator_config" > "$HOME/.config/terminator/config"
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 zsh
+echo "autodebian/installer.sh FINISHED"
