@@ -11,7 +11,6 @@ sudo apt install terminator -y
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 sudo cat "$DIR/zsh_config" > "$HOME/.zshrc"
 sudo cat "$DIR/terminator_config" > "$HOME/.config/terminator/config"
-zsh
 sudo apt install fonts-powerline -y
 sudo apt install powerline -y
 sudo apt install neofetch -y
@@ -44,3 +43,4 @@ sudo apt install kde-full -y
 echo "Applying configuration files"
 
 echo "autodebian/installer.sh FINISHED"
+zsh
